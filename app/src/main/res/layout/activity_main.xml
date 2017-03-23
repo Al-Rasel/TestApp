@@ -1,21 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    android:id="@+id/main_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<android.support.v7.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/recylerView_fullListOfData"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="#DDDDFF"
+            android:weightSum="6">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+
+                    android:text="日付" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#d0cac4c4" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+
+                    android:text="サプライヤー" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#d0cac4c4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+
+                    android:text="所得" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#d0cac4c4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+
+                    android:text="支出" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#d0cac4c4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+
+                    android:text="科目" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#d0cac4c4" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+
+                    android:text="コース" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#d0cac4c4" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#8e8a8a" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recylerView_fullListOfData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+ />
+
+    </LinearLayout>
+
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_suppliers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
-        android:id="@+id/button_suppliers"
         android:src="@android:drawable/ic_input_add"
         app:layout_anchorGravity="bottom|right|end" />
 
